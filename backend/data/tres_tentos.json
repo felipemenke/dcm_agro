@@ -1,0 +1,124 @@
+[
+  {
+    "quarter": "2021-Q1",
+    "revenue": 769.273,
+    "ebitda": 55.733,
+    "net_debt": 27.70
+  },
+  {
+    "quarter": "2021-Q2",
+    "revenue": 1205.380,
+    "ebitda": 122.339,
+    "net_debt": 795.088
+  },
+  {
+    "quarter": "2021-Q3",
+    "revenue": 1729.545,
+    "ebitda": 119.436,
+    "net_debt": 427.887
+  },
+  {
+    "quarter": "2021-Q4",
+    "revenue": 1635.119,
+    "ebitda": 83.550,
+    "net_debt": 290.893
+  },
+  {
+    "quarter": "2022-Q1",
+    "revenue": 1273.235,
+    "ebitda": 54.560,
+    "net_debt": 27.70
+  },
+  {
+    "quarter": "2022-Q2",
+    "revenue": 1497.303,
+    "ebitda": 162.675,
+    "net_debt": 503.20
+  },
+  {
+    "quarter": "2022-Q3",
+    "revenue": 1958.912,
+    "ebitda": 108.988,
+    "net_debt": 77.00
+  },
+  {
+    "quarter": "2022-Q4",
+    "revenue": 2156.389 ,
+    "ebitda": 249.174,
+    "net_debt": 216.90
+  },
+
+  {
+    "quarter": "2023-Q1",
+    "revenue": 1804.696,
+    "ebitda": 122.485,
+    "net_debt": 192.6
+  },
+  {
+    "quarter": "2023-Q2",
+    "revenue": 1760.359 ,
+    "ebitda": 53.506,
+    "net_debt": 537.00
+  },
+  {
+    "quarter": "2023-Q3",
+    "revenue": 2404.340,
+    "ebitda": 177.688,
+    "net_debt": 116.3
+  },
+  {
+    "quarter": "2023-Q4",
+    "revenue": 3029.590,
+    "ebitda": 145.608,
+    "net_debt": 46.6
+  },
+  {
+    "quarter": "2024-Q1",
+    "revenue": 2679.222,
+    "ebitda": 208.771,
+    "net_debt": 324.109
+  },
+  {
+    "quarter": "2024-Q2",
+    "revenue": 2796.469,
+    "ebitda": 400.532,
+    "net_debt": 520.366
+  },
+  {
+    "quarter": "2024-Q3",
+    "revenue": 3496.560,
+    "ebitda": 365.397,
+    "net_debt": 148.955
+  },
+   {
+    "quarter": "2024-Q4",
+    "revenue": 3853.520,
+    "ebitda": 365.961,
+    "net_debt": 224.655
+  },
+  {
+    "quarter": "2025-Q1",
+    "revenue": 3499.108,
+    "ebitda": 164.721,
+    "net_debt": 371.493 
+  },
+  {
+    "quarter": "2025-Q2",
+    "revenue": 3562.877,
+    "ebitda": 330.153,
+    "net_debt": 1806.197
+  },
+  {
+    "quarter": "2025-Q3",
+    "revenue": 4994.879,
+    "ebitda": 33.997,
+    "net_debt": 1579.621
+  },
+ 
+  {
+    "quarter": "2025-Q4",
+    "revenue": 4366.830,
+    "ebitda": 129.505,
+    "net_debt": 1600.083
+  }
+]
