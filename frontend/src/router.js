@@ -6,6 +6,7 @@ import { renderFarelo } from "./pages/farelo"
 import { renderInsumos } from "./pages/insumos"
 import { renderTrigo } from "./pages/trigo"
 import { renderPorto } from "./pages/porto"
+import { renderCaramuru } from "./pages/caramuru"
 
 export async function router() {
   const path = window.location.pathname
@@ -25,6 +26,8 @@ export async function router() {
       return renderInsumos()
     case "/porto":
       return renderPorto()
+    case "/caramuru":
+      return renderCaramuru()
     default:
       return renderHome()
   }

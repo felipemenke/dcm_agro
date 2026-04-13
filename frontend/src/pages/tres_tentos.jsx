@@ -1,7 +1,7 @@
 ﻿import Chart from "chart.js/auto"
 import { getQuarterly } from "../api"
 
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
 const formatNumber = value =>
   Number.isFinite(value)
     ? value.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })

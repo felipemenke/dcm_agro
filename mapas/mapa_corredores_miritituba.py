@@ -70,8 +70,9 @@ def C(name: str) -> Tuple[float, float]:
 # Configurações do mapa
 # ──────────────────────────────────────────────────────────────────────────────
 MIRI_POINT      = Point(*C("Miritituba"))
-TARGET_STATES   = ["PA", "MT"]
-LOOKUP_STATES   = ["PA", "MT", "MA", "RO", "AM"]
+# Expandir área exibida para dar contexto Norte/Nordeste e melhor visualização dos intermodais
+TARGET_STATES   = ["PA", "MT", "RO", "AM", "MA", "TO", "PI", "BA"]
+LOOKUP_STATES   = TARGET_STATES
 
 palette_dist = ['#0f1633', '#0072b8', "#05c0f4", '#93201f', '#4a080a']
 cmap_dist    = LinearSegmentedColormap.from_list("dist_cmap", palette_dist)
@@ -245,7 +246,12 @@ WATERWAYS = [
     # Hidrovia Tapajós: Miritituba/Itaituba → Santarém (rio Tapajós — principal corredor de grãos)
     Corridor(
         label="Hidrovia Tapajós: Miritituba/Itaituba ↔ Santarém • ~250 km",
-        coords=[C("Itaituba"), C("Santarém")],
+        coords=[
+            C("Itaituba"),
+            (-55.65, -3.90),
+            (-55.05, -3.20),
+            C("Santarém")
+        ],
         color="#1a9fd4",
         linestyle="--",
         linewidth=3.2,
@@ -274,14 +280,15 @@ WATERWAYS = [
     ),
 
     # Hidrovia Madeira: Porto Velho → Itacoatiara (rio Madeira → rio Amazonas)
-    # Traçado: o rio Madeira corre de SUL (Porto Velho/RO) para NORTE/LESTE até foz em Itacoatiara (AM)
-    # Intermediário: Humaitá (AM) como nó de inflexão do rio
+    # Traçado com pontos intermediários para seguir o canal.
     Corridor(
         label="Hidrovia Madeira: Porto Velho → Itacoatiara • ~1.060 km",
         coords=[
             C("Porto Velho"),
-            (-61.862, -7.510),   # Humaitá/AM (rio Madeira vira para nordeste)
+            (-61.862, -7.510),   # Humaitá/AM
+            (-60.950, -6.550),   # tramo médio
             (-59.990, -4.680),   # Manicoré aproximado
+            (-58.900, -3.900),   # subida rumo Itacoatiara
             C("Itacoatiara"),
         ],
         color="#0077b6",
@@ -352,7 +359,7 @@ if __name__ == "__main__":
     base = mun_lookup[mun_lookup["abbrev_state"].isin(TARGET_STATES)].copy()
     base = add_distance_to_miritituba(base)
 
-    fig = plt.figure(figsize=(22, 12.375))
+    fig = plt.figure(figsize=(24, 14))
     fig.patch.set_facecolor("#0d1b2a")
 
     # Eixo do mapa: 70% da largura
@@ -368,6 +375,13 @@ if __name__ == "__main__":
         ax=ax,
         missing_kwds={"color": "#1a2a3a"},
     )
+
+    # Margens extras para enxergar mais terra e facilitar zoom na leitura dos intermodais
+    xmin, ymin, xmax, ymax = base.total_bounds
+    pad_x = 2.5
+    pad_y = 2.5
+    ax.set_xlim(xmin - pad_x, xmax + pad_x)
+    ax.set_ylim(ymin - pad_y, ymax + pad_y)
 
     # ── Contorno dos estados ──────────────────────────────────────────────
     base.dissolve(by="abbrev_state").boundary.plot(
@@ -449,8 +463,11 @@ if __name__ == "__main__":
     leg.get_title().set_fontweight("bold")
 
     # ── Salvar ────────────────────────────────────────────────────────────
-    output_path = "frontend/public/assets/mapa-porto.png"
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    plt.savefig(output_path, dpi=300, bbox_inches="tight",
-                facecolor=fig.get_facecolor())
-    print(f"✓ Mapa salvo em {output_path}")
+    output_dir = os.path.join("frontend", "public", "assets")
+    os.makedirs(output_dir, exist_ok=True)
+    png_path = os.path.join(output_dir, "mapa-porto.png")
+    svg_path = os.path.join(output_dir, "mapa-porto.svg")
+
+    plt.savefig(png_path, dpi=400, bbox_inches="tight", facecolor=fig.get_facecolor())
+    plt.savefig(svg_path, dpi=400, bbox_inches="tight", facecolor=fig.get_facecolor(), format="svg")
+    print(f"✓ Mapas salvos em {png_path} e {svg_path}")

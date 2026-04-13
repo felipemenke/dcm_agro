@@ -16,6 +16,7 @@ async function renderApp() {
     ${footer}
   `
 
+  // Navegação SPA
   document.querySelectorAll("[data-link]").forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault()
@@ -23,6 +24,25 @@ async function renderApp() {
       renderApp()
     })
   })
+
+  // Menu hambúrguer (mobile)
+  const toggle = document.querySelector(".menu-toggle")
+  const nav = document.querySelector(".nav")
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("active")
+      toggle.setAttribute("aria-expanded", String(isOpen))
+      toggle.textContent = isOpen ? "×" : "≡"
+    })
+
+    nav.querySelectorAll("a[data-link]").forEach(a => {
+      a.addEventListener("click", () => {
+        nav.classList.remove("active")
+        toggle.setAttribute("aria-expanded", "false")
+        toggle.textContent = "≡"
+      })
+    })
+  }
 }
 
 window.addEventListener("popstate", renderApp)

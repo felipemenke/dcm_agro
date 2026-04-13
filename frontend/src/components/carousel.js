@@ -8,7 +8,7 @@ export function initCarousel() {
   new Swiper('.swiper', {
     modules: [Navigation, Pagination, Autoplay],
     loop: true,
-    spaceBetween: 25,
+    spaceBetween: 12,
     autoplay: {
       delay: 4000,
     },

@@ -7,8 +7,9 @@ export async function renderHeader() {
   ])
 
   const format = item => {
-    if (!item?.price) return "N/A"
-    return `${item.price} (${item.change}%)`
+    if (item?.price === null || item?.price === undefined) return "N/A"
+    const changeText = Number.isFinite(item?.change) ? ` (${item.change}%)` : ""
+    return `${item.price}${changeText}`
   }
 
   const formatPrice = value => {
@@ -36,9 +37,12 @@ export async function renderHeader() {
             <img class="logo-3tentos" src="/assets/3tentos-logo.png" alt="3Tentos" />
             </a>
 
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+
             <div class="nav">
                 <a href="/" data-link>Início</a>
                 <a href="/3tentos" data-link>3Tentos</a>
+                <a href="/caramuru" data-link>Caramuru</a>
                 <a href="/porto" data-link>Porto</a>
                 <a href="/soja" data-link>Soja</a>
                 <a href="/milho" data-link>Milho</a>

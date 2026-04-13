@@ -69,26 +69,36 @@ export function renderHome() {
 
         <a href="/3tentos" data-link class="card card-link">
             <h3>3Tentos</h3>
-            <p>[O que trataremos aqui].</p>
+            <p>Modelo integrado: insumos, indústria e trading para capturar margens na cadeia de grãos.</p>
+        </a>
+
+        <a href="/caramuru" data-link class="card card-link">
+            <h3>Caramuru</h3>
+            <p>Originação forte, logística própria e portfólio de óleos, farelos e biocombustíveis.</p>
+        </a>
+
+        <a href="/porto" data-link class="card card-link">
+            <h3>Porto</h3>
+            <p>Ativo logístico para destravar fluxo do Centro-Oeste e reduzir custo por tonelada.</p>
         </a>
 
         <a href="/soja" data-link class="card card-link">
             <h3>Soja</h3>
-            <p>[O que trataremos aqui].</p>
+            <p>Fundamentos, basis e margens do complexo soja na JV.</p>
         </a>
         <a href="/milho" data-link class="card card-link">
             <h3>Milho</h3>
-            <p>[O que trataremos aqui].</p>
+            <p>Demanda, etanol de milho e spreads logísticos.</p>
         </a>
 
         <a href="/farelo" data-link class="card card-link">
             <h3>Farelo</h3>
-            <p>[O que trataremos aqui].</p>
+            <p>Drivers de preço, basis e participação no mix de receita.</p>
         </a>
 
         <a href="/insumos" data-link class="card card-link">
             <h3>Insumos</h3>
-            <p>[O que trataremos aqui].</p>
+            <p>Mercado de fertilizantes e alavancas de compra para produtores.</p>
         </a>
 
     </div>
