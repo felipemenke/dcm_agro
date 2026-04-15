@@ -71,7 +71,7 @@ export async function renderPorto() {
 
       <section class="info-section">
         <h2>Mapa</h2>
-        <p class="note">Mapa temático: distância até Miritituba + corredores rodoviários, hidroviários e ferroviários.</p>
+        <p class="note">Mapa temático: distância até Miritituba e principais corredores logísticos (rodoviários, hidroviários e ferroviários). As distâncias são aproximadas e têm caráter exclusivamente ilustrativo.</p>
         <div class="chart-wrapper" style="padding:12px; background:#f9fafb; border:1px solid #e5e7eb; border-radius:12px;">
           <picture style="display:block;">
             <source srcset="/assets/mapa-porto.png" type="image/png" />
