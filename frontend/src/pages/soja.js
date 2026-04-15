@@ -1,7 +1,7 @@
 import { getSemiannual } from "../api"
 import Chart from "chart.js/auto"
 
-export async function renderSoja() {
+export function renderSoja() {
   setTimeout(async () => {
     const data = await getSemiannual("ZS=F")
 

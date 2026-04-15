@@ -1,7 +1,7 @@
 import { getSemiannual } from "../api"
 import Chart from "chart.js/auto"
 
-export async function renderTrigo() {
+export function renderTrigo() {
 
   setTimeout(async () => {
     const data = await getSemiannual("ZW=F")

@@ -1,7 +1,7 @@
 import { getSemiannual } from "../api"
 import Chart from "chart.js/auto"
 
-export async function renderInsumos() {
+export function renderInsumos() {
 
   setTimeout(async () => {
     const data = await getSemiannual("CF")

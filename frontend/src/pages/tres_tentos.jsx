@@ -11,7 +11,7 @@ if (Chart?.defaults?.font) {
   Chart.defaults.font.family = "Montserrat, sans-serif"
 }
 
-export async function renderTresTentos() {
+export function renderTresTentos() {
 
   setTimeout(async () => {
     const errorBox = document.getElementById("tres-error")

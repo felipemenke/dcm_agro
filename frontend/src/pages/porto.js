@@ -1,4 +1,4 @@
-export async function renderPorto() {
+export function renderPorto() {
   return `
     <div class="page">
       <div class="page-heading">

@@ -1,7 +1,7 @@
 import { getSemiannual } from "../api"
 import Chart from "chart.js/auto"
 
-export async function renderMilho() {
+export function renderMilho() {
 
   setTimeout(async () => {
     const data = await getSemiannual("ZC=F")

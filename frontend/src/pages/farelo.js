@@ -1,7 +1,7 @@
 import { getSemiannual } from "../api"
 import Chart from "chart.js/auto"
 
-export async function renderFarelo() {
+export function renderFarelo() {
 
   setTimeout(async () => {
     const data = await getSemiannual("ZM=F")

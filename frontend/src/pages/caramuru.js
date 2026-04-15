@@ -1,4 +1,4 @@
-export async function renderCaramuru() {
+export function renderCaramuru() {
   return `
     <div class="page">
       <div class="page-heading">

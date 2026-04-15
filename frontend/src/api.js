@@ -4,14 +4,21 @@ const API_BASE = (
   "http://127.0.0.1:8000"
 ).replace(/\/$/, "");
 
-export async function requestJSON(path, fallback) {
+export async function requestJSON(path, fallback, timeoutMs = 5000) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
   try {
-    const response = await fetch(`${API_BASE}${path}`);
+    const response = await fetch(`${API_BASE}${path}`, { signal: controller.signal });
     if (!response.ok) return fallback;
     return await response.json();
   } catch (error) {
-    console.error(`Falha ao chamar ${path}:`, error);
+    if (error?.name !== "AbortError") {
+      console.error(`Falha ao chamar ${path}:`, error);
+    }
     return fallback;
+  } finally {
+    clearTimeout(timeoutId);
   }
 }
 

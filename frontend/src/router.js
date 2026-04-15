@@ -8,7 +8,7 @@ import { renderTrigo } from "./pages/trigo"
 import { renderPorto } from "./pages/porto"
 import { renderCaramuru } from "./pages/caramuru"
 
-export async function router() {
+export function router() {
   const path = window.location.pathname
 
   switch (path) {

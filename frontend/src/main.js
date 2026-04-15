@@ -18,10 +18,10 @@ function renderErrorState(error) {
   `
 }
 
-async function renderApp() {
+function renderApp() {
   try {
-    const header = await renderHeader()
-    const page = await router()
+    const header = renderHeader()
+    const page = router()
     const footer = renderFooter()
 
     document.querySelector("#app").innerHTML = `
