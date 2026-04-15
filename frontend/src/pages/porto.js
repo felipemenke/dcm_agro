@@ -20,52 +20,51 @@ export function renderPorto() {
 
         <div class="info-grid" style="margin-top: 16px;">
           <div>
-            <p class="pill">FNA</p>
-            <h3 style="margin: 10px 0 8px;">Fundo Constitucional de Financiamento do Norte</h3>
-            <p><strong>Visão geral:</strong> fundo público voltado ao desenvolvimento da Região Norte, com forte aderência a projetos de agronegócio, infraestrutura e indústria.</p>
-            <p><strong>Como atua:</strong> financia armazenagem, processamento e escoamento com condições diferenciadas para projetos que gerem emprego e produtividade.</p>
+            <p class="pill">FDA</p>
+            <h3 style="margin: 10px 0 8px;">Fundo de Desenvolvimento da Amazônia</h3>
+            <p><strong>Visão geral:</strong> instrumento de financiamento voltado para promover o desenvolvimento econômico sustentável da região Norte do Brasil.</p>
+            <p><strong>Como atua:</strong> participa diretamente no financiamento de projetos estruturantes, com foco em infraestrutura, logística, energia, agroindústria e indústria de base.</p>
             <ul class="feature-list">
-              <li>Taxas subsidiadas, abaixo das praticadas pelo mercado.</li>
-              <li>Prazos longos, com carência para início do pagamento.</li>
-              <li>Percentual financiável elevado, sujeito ao enquadramento do projeto.</li>
-              <li>Exige viabilidade econômica, regularidade ambiental e garantias.</li>
+              <li>Destinado a projetos localizados na área de atuação da Sudam.</li>
+              <li>Foco em empreendimentos com impacto econômico e social relevante.</li>
+              <li>Pode financiar uma parcela significativa do CAPEX do projeto.</li>
+              <li>Exige aprovação técnica e enquadramento nas diretrizes regionais.</li>
+              <li>Necessidade de comprovação de viabilidade econômica e ambiental.</li>
+              <li>Prazos longos e condições favorecidas, compatíveis com projetos estruturais.</li>
             </ul>
-            <p class="note">Ponto estratégico: fonte central de funding para projetos no Arco Norte.</p>
           </div>
 
           <div>
-            <p class="pill">FDCO</p>
-            <h3 style="margin: 10px 0 8px;">Fundo de Desenvolvimento do Centro-Oeste</h3>
-            <p><strong>Visão geral:</strong> instrumento voltado a grandes projetos estruturantes, com foco em infraestrutura, logística e expansão produtiva.</p>
-            <p><strong>Como atua:</strong> costuma complementar outras fontes em projetos de maior porte e impacto regional, como portos, ferrovias e polos industriais.</p>
+            <p class="pill">FNO</p>
+            <h3 style="margin: 10px 0 8px;">Fundo Constitucional de Financiamento do Norte</h3>
+            <p><strong>Visão geral:</strong> linha de crédito operada pelo Banco da Amazônia para fomentar o desenvolvimento econômico da região Norte.</p>
+            <p><strong>Como atua:</strong> oferece financiamento com condições diferenciadas para atividades produtivas, com forte presença no agronegócio, incluindo custeio, investimento e industrialização.</p>
             <ul class="feature-list">
-              <li>Foco em projetos estruturantes e de grande escala.</li>
-              <li>Prazos longos e compatíveis com infraestrutura.</li>
-              <li>Taxas competitivas, associadas a políticas de desenvolvimento regional.</li>
-              <li>Processo de aprovação mais rigoroso, com análise técnica e de impacto.</li>
+              <li>Exclusivo para a região Norte do Brasil.</li>
+              <li>Operado principalmente pelo Banco da Amazônia.</li>
+              <li>Taxas de juros reduzidas em relação ao mercado.</li>
+              <li>Condições favorecidas para pequenos, médios e grandes produtores.</li>
+              <li>Prazos de pagamento estendidos, com possibilidade de carência.</li>
+              <li>Linhas específicas para investimento, custeio e inovação.</li>
+              <li>Incentivos adicionais para práticas sustentáveis.</li>
             </ul>
-            <p class="note">Ponto estratégico: ideal para portos e corredores de exportação.</p>
           </div>
 
           <div>
             <p class="pill">BNDES</p>
             <h3 style="margin: 10px 0 8px;">Banco Nacional de Desenvolvimento Econômico e Social</h3>
-            <p><strong>Visão geral:</strong> principal financiador de longo prazo do país, com atuação ampla em infraestrutura, logística, energia e agronegócio.</p>
-            <p><strong>Como atua:</strong> pode financiar diretamente ou via bancos parceiros, sendo uma referência em projetos de grande porte e alta estruturação.</p>
+            <p><strong>Visão geral:</strong> principal instrumento de financiamento de longo prazo do Brasil, apoiando investimentos em infraestrutura, logística, indústria e agronegócio.</p>
+            <p><strong>Como atua:</strong> oferece linhas de crédito diretas e indiretas via instituições financeiras credenciadas, financiando projetos de expansão, modernização e implantação de empreendimentos.</p>
             <ul class="feature-list">
-              <li>Prazos que podem ultrapassar 10 a 20 anos.</li>
-              <li>Taxas baseadas em indexadores como a TLP.</li>
-              <li>Participação parcial no investimento, conforme a estrutura do projeto.</li>
-              <li>Exige estudos de viabilidade detalhados e compliance rigoroso.</li>
+              <li>Atuação em todo o território nacional.</li>
+              <li>Financiamento de projetos de médio e grande porte.</li>
+              <li>Taxas de juros geralmente baseadas na TLP (Taxa de Longo Prazo).</li>
+              <li>Prazos longos, com períodos de carência conforme o projeto.</li>
+              <li>Exigência de garantias e análise de crédito rigorosa.</li>
+              <li>Necessidade de comprovação de viabilidade econômica, financeira e ambiental.</li>
+              <li>Pode financiar máquinas, equipamentos, obras e serviços.</li>
             </ul>
-            <p class="note">Ponto estratégico: ancora a estrutura de capital e aumenta a credibilidade do projeto.</p>
           </div>
-        </div>
-
-        <div style="margin-top: 16px; padding: 16px; border-left: 4px solid var(--accent-red); background: #f8fafc; border-radius: 12px;">
-          <p style="margin: 0; font-weight: 600;">
-            A estrutura de financiamento combina instrumentos públicos de fomento com linhas de longo prazo, buscando otimizar o custo de capital e garantir aderência às políticas de desenvolvimento regional.
-          </p>
         </div>
       </section>
 
