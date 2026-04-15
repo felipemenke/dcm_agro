@@ -1,4 +1,8 @@
-const API_BASE = (import.meta.env.VITE_API_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
+const API_BASE = (
+  import.meta.env.VITE_API_URL ||
+  import.meta.env.API_BASE ||
+  "http://127.0.0.1:8000"
+).replace(/\/$/, "");
 
 export async function requestJSON(path, fallback) {
   try {
