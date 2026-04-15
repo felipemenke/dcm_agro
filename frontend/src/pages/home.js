@@ -129,6 +129,12 @@ export function renderHome() {
             Reunião com o antigo Head de logística e portos da Caramuru.
             </div>
           </div>
+          <div class="swiper-slide">
+            <img src="/assets/rd-igc1.jpeg" />
+            <div class="slide-caption">
+            Primeiro Roadshow na IGC Partners, com apresentação do projeto para a banca e feedbacks valiosos para aprimorar nossa análise.
+            </div>
+          </div>
 
         </div>
 
