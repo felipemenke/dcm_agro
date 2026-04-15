@@ -1,7 +1,7 @@
-﻿import Chart from "chart.js/auto"
-import { getQuarterly } from "../api"
+import Chart from "chart.js/auto"
+import { getQuarterly, getTresTentosHistory, getTresTentosSummary } from "../api"
 
-const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
+
 const formatNumber = value =>
   Number.isFinite(value)
     ? value.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
@@ -268,29 +268,25 @@ export async function renderTresTentos() {
     try {
       showError("Carregando dados...")
 
-      const [historyRes, summaryRes, priceRes] = await Promise.all([
-        fetch(`${API_URL}/api/3tentos/history`),
-        fetch(`${API_URL}/api/3tentos/summary`),
+      const [history, _summary, priceRes] = await Promise.all([
+        getTresTentosHistory(),
+        getTresTentosSummary(),
         getQuarterly("TTEN3.SA")
       ])
 
-      if (!historyRes.ok) throw new Error("Falha ao carregar histórico da 3tentos")
-      if (!summaryRes.ok) throw new Error("Falha ao carregar resumo da 3tentos")
-
-      const history = await historyRes.json()
-      await summaryRes.json() // mantido para compatibilidade; cálculo passa a ser local
       priceData = priceRes ?? []
 
       historyData = history
       if (!historyData?.length) {
-        showError("Sem dados de histórico para exibir")
+        showError("Backend indisponível ou sem dados de histórico para a 3tentos")
         return
       }
 
       renderUI(periodSelect?.value ?? "all")
       showError("")
     } catch (err) {
-      showError(err.message || "Erro ao carregar dados da 3tentos")
+      console.error("Erro ao carregar dados da 3tentos:", err)
+      showError("Nao foi possivel carregar os dados da 3tentos. Verifique a API no Vercel.")
     }
 
   }, 0)
@@ -354,3 +350,4 @@ export async function renderTresTentos() {
     </div>
   `
 }
+
