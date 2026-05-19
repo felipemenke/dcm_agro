@@ -78,7 +78,7 @@ export function renderHome() {
         </a>
 
         <a href="/porto" data-link class="card card-link">
-            <h3>Porto</h3>
+            <h3>Via Maris</h3>
             <p>Ativo logístico para destravar fluxo do Centro-Oeste e reduzir custo por tonelada.</p>
         </a>
 
@@ -102,6 +102,26 @@ export function renderHome() {
         </a>
 
     </div>
+
+    <section class="info-section" style="margin-top:32px;">
+      <div class="page-heading" style="gap:4px; margin-bottom:12px;">
+        <p class="eyebrow">Relatório Completo</p>
+        <h2 style="margin:0;">PDF do Projeto</h2>
+        <p class="note">Visualize abaixo ou abra em nova aba para entrar no documento.</p>
+      </div>
+
+      <div style="width:100%; min-height:70vh; border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff;">
+        <iframe
+          src="/assets/pdf-report-dcm-26-1.pdf"
+          title="PDF Report DCM 26.1"
+          style="width:100%; height:70vh; min-height:480px; border:0; display:block;"
+        ></iframe>
+      </div>
+
+      <p class="note" style="margin-top:8px;">
+        Se o preview não carregar no seu navegador, <a href="/assets/pdf-report-dcm-26-1.pdf" target="_blank" rel="noopener noreferrer">clique aqui para abrir o PDF</a>.
+      </p>
+    </section>
 
     <div class="home-carousel-section">
       <h2>Galeria do Projeto</h2>

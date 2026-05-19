@@ -3,7 +3,7 @@ export function renderPorto() {
     <div class="page">
       <div class="page-heading">
         <p class="eyebrow">Infraestrutura</p>
-        <h1>Porto</h1>
+        <h1>Via Maris</h1>
         <p class="lede">Ativo estratégico para destravar logística, reduzir custo por tonelada e aumentar a competitividade das exportações.</p>
       </div>
 
@@ -12,6 +12,15 @@ export function renderPorto() {
         <p>O porto é peça central para ampliar eficiência logística e capturar ganhos estruturais no escoamento de grãos e derivados. Localizado no eixo Centro-Oeste/Arco Norte, encurta a distância até os mercados internacionais e reduz de forma relevante o custo por tonelada.</p>
         <p>Estruturado em joint venture com a Caramuru, combina know-how portuário, logística integrada e relacionamento comercial, mitigando riscos de execução desde o início.</p>
         <p>O ativo aumenta controle do fluxo, previsibilidade operacional e gestão de estoques, elevando a rentabilidade de originação, exportação e processamento. Atender terceiros gera receita adicional e dilui custos fixos.</p>
+      </section>
+
+      <section class="info-section">
+        <h2>Tese de geração de valor</h2>
+        <p>O projeto portuário foi desenhado para gerar valor operacional e financeiro no longo prazo, combinando crescimento de volume, eficiência logística e conversão crescente de resultado em caixa. A expectativa é de movimentação próxima de 5 milhões de toneladas por ano, com foco em soja, milho e farelo, acompanhando a expansão da produção no Centro-Oeste e no Arco Norte.</p>
+        <p>Com o ramp-up da ocupação e a consolidação das operações de 3tentos, Caramuru e terceiros, a receita tende a crescer de forma consistente ao longo dos anos. Esse avanço é sustentado por contratos, ganho de escala e aumento estrutural da demanda por escoamento regional.</p>
+        <p>Na fase inicial, o projeto concentra investimentos em construção e expansão da infraestrutura, com CapEx total próximo de BRL 400 milhões. Após a implantação, a necessidade de reinvestimento recorrente cai de forma relevante, permitindo maior conversão da geração operacional em fluxo de caixa livre.</p>
+        <p>Essa dinâmica reforça a rentabilidade: o EBITDA cresce com a maturação do ativo e a conversão de EBITDA em fluxo de caixa livre melhora gradualmente, refletindo menor intensidade de capital e ganhos operacionais. Como resultado, o terminal passa a gerar caixa com mais previsibilidade e recorrência.</p>
+        <p>Sob a ótica financeira, a modelagem adota estrutura de capital conservadora e premissas aderentes ao mercado, com geração operacional positiva após o ramp-up. O ativo também preserva potencial de valorização de longo prazo, apoiado pela expansão do agronegócio brasileiro, pela relevância logística do Arco Norte e pela demanda global por exportação de grãos.</p>
       </section>
 
       <section class="info-section">
@@ -66,6 +75,15 @@ export function renderPorto() {
             </ul>
           </div>
         </div>
+      </section>
+
+      <section class="info-section">
+        <h2>Estrutura de Dívida</h2>
+        <p>A estrutura de financiamento do projeto foi desenhada para equilibrar crescimento, eficiência de capital e solidez financeira ao longo de todo o ciclo operacional do terminal. O modelo combina instrumentos de mercado de capitais, linhas de desenvolvimento e financiamento de transição, com o objetivo de otimizar o custo de capital e ampliar o retorno aos acionistas sem comprometer a segurança financeira da operação.</p>
+        <p>O funding foi dividido em três etapas principais. Na fase inicial, a estrutura prevê a emissão de Commercial Notes no valor aproximado de BRL 280 milhões, funcionando como ponte financeira para implantação e construção do terminal. Em seguida, parte dessa exposição é refinanciada por linhas incentivadas de desenvolvimento, como o FDA, reduzindo de forma relevante o custo médio da dívida. Na etapa final, o projeto acessa o mercado por meio de debêntures incentivadas, alongando o perfil da dívida e consolidando uma estrutura de longo prazo compatível com a geração de caixa do ativo.</p>
+        <p>A estratégia permite redução gradual do WACC do projeto, eleva a atratividade econômica da operação e melhora o retorno sobre o capital próprio. Mesmo com alavancagem, os indicadores de crédito permanecem conservadores, sustentados pela previsibilidade operacional do terminal e pela forte capacidade de geração de caixa ao longo do tempo.</p>
+        <p>Os indicadores projetados também apontam uma trajetória saudável de desalavancagem, com redução progressiva da relação Dívida Líquida/EBITDA conforme o ativo amadurece operacionalmente. Além disso, os índices de cobertura do serviço da dívida (DSCR) permanecem acima dos covenants mínimos em diferentes cenários de estrutura de capital, reforçando a resiliência financeira do projeto.</p>
+        <p>Como suporte adicional, a estrutura contempla garantias compatíveis com operações de infraestrutura e logística, incluindo cessão fiduciária de recebíveis, participação societária da SPE e garantias corporativas estratégicas. Dessa forma, o modelo busca maximizar eficiência de funding, preservar liquidez e garantir sustentabilidade de longo prazo para o empreendimento.</p>
       </section>
 
       <section class="info-section">
