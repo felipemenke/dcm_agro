@@ -106,7 +106,7 @@ export function renderHome() {
     <section class="info-section" style="margin-top:32px;">
       <div class="page-heading" style="gap:4px; margin-bottom:12px;">
         <p class="eyebrow">Relatório Completo</p>
-        <h2 style="margin:0;">PDF do Projeto</h2>
+        <h2 style="margin:0;">Report do Projeto</h2>
         <p class="note">Visualize abaixo ou abra em nova aba para entrar no documento.</p>
       </div>
 
